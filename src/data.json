@@ -10,5 +10,11 @@
       "ad": "Pnömatik Silindir - Seri X",
       "kategori": "Pnömatik",
       "aciklama": "Hızlı çevrim süresi ve uzun ömürlü sızdırmazlık elemanları ile optimize edilmiştir."
-    }
+    },
+   {
+    "id": "DVN-003",
+    "ad": "Hidrolik Pompa - Seri Y",
+    "kategori": "Hidrolik",
+    "aciklama": "Yüksek verimli ve uzun ömürlü hidrolik pompa modeli."
+   }
   ]

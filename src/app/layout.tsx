@@ -4,6 +4,16 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Devinim Makina | Endüstriyel Çözümler',
   description: 'Hidrolik ve Pnömatik Sistemlerde Teknik Çözüm Ortağınız',
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+    },
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

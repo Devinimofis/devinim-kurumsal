@@ -1,6 +1,6 @@
 import { parseStringPromise } from 'xml2js';
 
-const TICIMAX_URL = 'http://www.devinimonline.com/Servis/UrunServis.svc';
+const TICIMAX_URL = 'https://www.devinimonline.com/Servis/UrunServis.svc';
 
 export async function getTicimaxProducts() {
   const apiKey = process.env.TICIMAX_API_KEY;

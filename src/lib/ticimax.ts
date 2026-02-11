@@ -2,7 +2,7 @@ import { parseStringPromise } from 'xml2js';
 
 // Ticimax servis URL'niz (Genellikle bu formattadır, 
 // eğer özel bir URL'niz varsa sonra güncelleyebiliriz)
-const TICIMAX_URL = 'https://www.devinimonline.com/Servis/UrunServis.svc?wsdl';
+const TICIMAX_URL = 'https://www.devinimonline.com/Servis/UrunServis.svc';
 
 export async function getTicimaxProducts() {
   const apiKey = process.env.TICIMAX_API_KEY;

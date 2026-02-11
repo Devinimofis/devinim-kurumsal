@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 import { getTicimaxProducts } from '@/lib/ticimax';
 import Link from 'next/link';
 

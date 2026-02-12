@@ -6,8 +6,7 @@ import Link from 'next/link';
 export default async function UrunlerPage() {
   // Ticimax motorunu çalıştır ve ürünleri getir
   const products = await getTicimaxProducts();
-
-  return (
+  console.log("SAYFA KATMANI: Gelen urun sayisi ->", products.length);
     <div className="max-w-7xl mx-auto py-12 px-4">
       <div className="flex justify-between items-center mb-8 border-b pb-4">
         <h1 className="text-3xl font-bold text-slate-900">Ürün Kataloğu</h1>

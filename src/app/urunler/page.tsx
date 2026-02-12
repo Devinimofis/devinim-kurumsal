@@ -1,12 +1,17 @@
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
+
 import { getTicimaxProducts } from '@/lib/ticimax';
 import Link from 'next/link';
 
 export default async function UrunlerPage() {
-  // Ticimax motorunu çalıştır ve ürünleri getir
+  // Ticimax motorunu çalıştır
   const products = await getTicimaxProducts();
-  console.log("SAYFA KATMANI: Gelen urun sayisi ->", products.length);
+
+  // KRİTİK TERMİNAL LOGU: Bu satır terminalde (VS Code) görünmeli
+  console.log("SU ANKI URUN SAYISI:", products?.length);
+
+  return (
     <div className="max-w-7xl mx-auto py-12 px-4">
       <div className="flex justify-between items-center mb-8 border-b pb-4">
         <h1 className="text-3xl font-bold text-slate-900">Ürün Kataloğu</h1>
@@ -15,7 +20,7 @@ export default async function UrunlerPage() {
         </span>
       </div>
       
-      {products.length === 0 ? (
+      {(!products || products.length === 0) ? (
         <div className="text-center py-20">
           <p className="text-slate-500 text-lg">Şu an gösterilecek ürün bulunamadı veya bağlantı bekleniyor.</p>
         </div>

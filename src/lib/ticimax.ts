@@ -12,11 +12,10 @@ export async function getTicimaxProducts() {
        <soapenv:Body>
           <tem:SelectUrun>
              <tem:UyeKodu>${apiKey}</tem:UyeKodu>
-             <tem:filitre/>
+             <tem:filitre />
           </tem:SelectUrun>
        </soapenv:Body>
     </soapenv:Envelope>`;
-
   try {
     const response = await fetch(TICIMAX_URL, {
       method: 'POST',
